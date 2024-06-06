@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <!--wrapper-->
+    <div class="bg-white shadow-lg rounded-lg p-6 w-80">
+        <div class="text-center mb-4"> <!--content-->
+            <h1 class="text-2xl font-bold text-gray-800">Increment And Decrement</h1> <!--inc dec text-->
+        </div>
+        <div class="flex items-center justify-between"> <!--block-->
+            <!--minus-->   
+            <button onclick="decrement()" class="bg-red-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl hover:bg-red-600">
+                &minus;
+            </button>
+            <div id="counter" class="text-2xl font-semibold text-gray-800">
+                0
+            </div>
+            <!--Plus-->
+            <button onclick="increment()" class="bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl hover:bg-green-600">
+                &plus;
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
